@@ -18,34 +18,37 @@ class LatestMatch extends Component {
     }
 
     return (
-      <div>
-        <h1>Latest Matches</h1>
-        <div>
-          <div className="centre-con">
-            <p>{updatedData.competingTeam}</p>
-            <p>{updatedData.date}</p>
-            <p>{updatedData.venue}</p>
-            <p>{updatedData.result}</p>
+      <>
+        <h1 className="latest-name-head">Latest Matches</h1>
+        <div className="latest-match-content-con">
+          <div className="res">
+            <div className="capital-con">
+              <p className="team-head">{updatedData.competingTeam}</p>
+              <p className="date">{updatedData.date}</p>
+              <p className="latest-paras">{updatedData.venue}</p>
+              <p className="latest-paras">{updatedData.result}</p>
+            </div>
+            <div className="latest-match-logo-con">
+              <img
+                src={updatedData.competingTeamLogo}
+                alt={`latest match ${updatedData.competingTeam}`}
+                className="latest-match-logo"
+              />
+            </div>
           </div>
-          <div>
-            <img
-              src={updatedData.competingTeamLogo}
-              alt={`latest match ${updatedData.competingTeam}`}
-              className="pp"
-            />
+
+          <div className="latest-paras-con">
+            <p className="latest-paras">First Innings</p>
+            <p className="latest-paras">{updatedData.firstInnings}</p>
+            <p className="latest-paras">Second Innings</p>
+            <p className="latest-paras">{updatedData.secondInnings}</p>
+            <p className="latest-paras">Man Of The Match</p>
+            <p className="latest-paras">{updatedData.manOfTheMatch}</p>
+            <p className="latest-paras">Umpires</p>
+            <p className="latest-paras">{updatedData.umpires}</p>
           </div>
         </div>
-        <div>
-          <p>First Innings</p>
-          <p>{updatedData.firstInnings}</p>
-          <p>Second Innings</p>
-          <p>{updatedData.secondInnings}</p>
-          <p>Man Of The Match</p>
-          <p>{updatedData.manOfTheMatch}</p>
-          <p>Umpires</p>
-          <p>{updatedData.umpires}</p>
-        </div>
-      </div>
+      </>
     )
   }
 }

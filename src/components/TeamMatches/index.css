@@ -1,4 +1,59 @@
+* {
+  font-family: Bree Serif;
+  padding: 0px;
+  margin: 0px;
+}
+
 .matches-bg {
-  background-color: blue;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.match-card-con {
+  list-style-type: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.match-bg-con {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.latest-bg {
+  width: 100%;
+}
+.team_banner_url {
+  width: 100%;
+}
+.rcb {
+  background: linear-gradient(to bottom, #d91c1f, #1e293b);
+}
+.kkr {
+  background: linear-gradient(to bottom, #5755a7, #1e293b);
+}
+.kxp {
+  background: linear-gradient(to bottom, #d91c1f, #1e293b);
+}
+.rr {
+  background: linear-gradient(to bottom, #1e293b, #1e293b);
+}
+.csk {
+  background: linear-gradient(to bottom, #f7db00, #1e293b);
+}
+.mi {
+  background: linear-gradient(to bottom, #13418b, #1e293b);
+}
+.sh {
+  background: linear-gradient(to bottom, #f26d22, #1e293b);
+}
+.dc {
+  background: linear-gradient(to bottom, #13418b, #1e293b);
 }

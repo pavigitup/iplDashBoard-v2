@@ -22,7 +22,7 @@ class Home extends Component {
       teamImageUrl: eachItem.team_image_url,
     }))
     this.setState({teamCards: updatedData, isLoader: false})
-    // console.log(updatedData)
+    console.log(updatedData)
   }
 
   render() {
@@ -31,7 +31,7 @@ class Home extends Component {
     return (
       <>
         {isLoader ? (
-          <div testid="loader">
+          <div data-testid="loader">
             <Loader type="Oval" color="#ffffff" height={50} width={50} />{' '}
           </div>
         ) : (
